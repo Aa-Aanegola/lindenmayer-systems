@@ -6,8 +6,8 @@ This repo contains code that emulates the properties of lindenmayer systems. You
 
 An L-system is a type of formal grammar that consists of (like most formal grammars):
 
-- An alphabet (set of symbols $\{a_0, a_1, a_2 ...,a_n\}$)
-- A set of production rules of the form $A \rarr B$
+- An alphabet (set of symbols ![eqn](./images/equations/set/gif))
+- A set of production rules of the form ![eqn](./images/equations/rule.gif)
 - An axiom (the initial string from which construction starts)
 - A mapping from the alphabet to geometric structures
 
@@ -34,7 +34,7 @@ In order for the L-system to function properly, it has to be supplied the axiom 
 
 The rule class is a representation of a single conversion rule that consists of a destination string and a probability value (for stochastic L-systems). Let us say we have the following rule:
 
-$$F \rarr F+F-F+F$$
+![eqn](./images/equations/rule2.gif)
 
 This would look like `ruleF = [Rule('F+F-F+F', 1.0)]` in code form. If multiple rules are required (ensure that the probabilities sum to 1 in this case), they can be appended to the list. 
 
