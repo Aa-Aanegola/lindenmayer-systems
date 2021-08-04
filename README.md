@@ -6,7 +6,7 @@ This repo contains code that emulates the properties of lindenmayer systems. You
 
 An L-system is a type of formal grammar that consists of (like most formal grammars):
 
-- An alphabet (set of symbols ![eqn](./images/equations/set/gif))
+- An alphabet (set of symbols ![eqn](./images/equations/set.gif))
 - A set of production rules of the form ![eqn](./images/equations/rule.gif)
 - An axiom (the initial string from which construction starts)
 - A mapping from the alphabet to geometric structures
